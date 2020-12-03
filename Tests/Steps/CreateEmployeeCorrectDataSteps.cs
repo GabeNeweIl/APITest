@@ -13,13 +13,13 @@ namespace Tests.Steps
 
         string jsonBody;
 
-        [Given(@"Create request '(.*)' with POST method")]
+        [When(@"Create request '(.*)' with POST method")]
         public void GivenCreateRequestWithPOSTMethod(string requestUrl)
         {
             SharedData.request = new RestSharp.RestRequest(requestUrl, Method.POST);
         }
         
-        [Given(@"I create a request boyd with following data")]
+        [When(@"I create a request boyd with following data")]
         public void WhenICreateARequestBoydWithFollowingData(Table table)
         {
             employee = table.CreateInstance<CreateEmployee>();
@@ -37,11 +37,10 @@ namespace Tests.Steps
             jsonBody = serializer.Serialize(obj);
         }
         
-        [Given(@"serelaized body to the API request")]
+        [When(@"serelaized body to the API request")]
         public void WhenSerelaizedBodyToTheAPIRequest()
         {
             SharedData.request.AddJsonBody(jsonBody);
         }
-        //
     }
 }

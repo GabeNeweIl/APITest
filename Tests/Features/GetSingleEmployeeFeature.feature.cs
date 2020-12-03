@@ -74,13 +74,13 @@ namespace Tests.Features
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("I do request for employee and i should get employee with uniq id")]
-        public virtual void IDoRequestForEmployeeAndIShouldGetEmployeeWithUniqId()
+        [NUnit.Framework.DescriptionAttribute("I do request for employee and I should get employee with unique id")]
+        public virtual void IDoRequestForEmployeeAndIShouldGetEmployeeWithUniqueId()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("I do request for employee and i should get employee with uniq id", null, tagsOfScenario, argumentsOfScenario);
-#line 4
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("I do request for employee and I should get employee with unique id", null, tagsOfScenario, argumentsOfScenario);
+#line 7
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -100,16 +100,16 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 5
-testRunner.Given("Create request \'employee/{id}\' with GET method", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 8
+testRunner.When("Create request \'employee/{id}\' with GET method", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 6
+#line 9
 testRunner.And("Create URL segment \'id\' with parameter \'1\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 7
+#line 10
 testRunner.And("Execute API", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 8
+#line 11
 testRunner.And("Deserialize the employee api content", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
                 TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
@@ -122,7 +122,7 @@ testRunner.And("Deserialize the employee api content", ((string)(null)), ((TechT
                             "Tiger Nixon",
                             "320800",
                             "61"});
-#line 9
+#line 12
 testRunner.Then("The employee should have the following values", ((string)(null)), table2, "Then ");
 #line hidden
             }
@@ -130,13 +130,13 @@ testRunner.Then("The employee should have the following values", ((string)(null)
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("I do request for employee and i should get status \"200\"")]
+        [NUnit.Framework.DescriptionAttribute("I do request for employee and I should get status \"200\"")]
         public virtual void IDoRequestForEmployeeAndIShouldGetStatus200()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("I do request for employee and i should get status \"200\"", null, tagsOfScenario, argumentsOfScenario);
-#line 14
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("I do request for employee and I should get status \"200\"", null, tagsOfScenario, argumentsOfScenario);
+#line 17
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -156,16 +156,16 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 15
-testRunner.Given("Create request \'employee/{id}\' with GET method", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 18
+testRunner.When("Create request \'employee/{id}\' with GET method", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 16
+#line 19
 testRunner.And("Create URL segment \'id\' with parameter \'1\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 17
+#line 20
 testRunner.And("Execute API", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 18
+#line 21
 testRunner.Then("returned status code will be \'200\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -179,7 +179,7 @@ testRunner.Then("returned status code will be \'200\'", ((string)(null)), ((Tech
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("I do request with wrong segment \"id\" and response code must be 404", null, tagsOfScenario, argumentsOfScenario);
-#line 20
+#line 23
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -199,16 +199,16 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 21
-testRunner.Given("Create request \'employee/{id}\' with GET method", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 24
+testRunner.When("Create request \'employee/{id}\' with GET method", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 22
+#line 25
 testRunner.And("Create URL segment \'id\' with parameter \'wrong\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 23
+#line 26
 testRunner.And("Execute API", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 24
+#line 27
 testRunner.Then("returned status code will be \'404\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }

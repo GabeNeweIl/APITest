@@ -103,7 +103,7 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 6
-testRunner.Given("Create request \'/update/{id}\' with PUT method", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+testRunner.When("Create request \'/update/{id}\' with PUT method", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 7
 testRunner.And("Create URL segment \'id\' with parameter \'1\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -162,7 +162,7 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 16
-testRunner.Given("Create request \'/update/{id}\' with PUT method", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+testRunner.When("Create request \'/update/{id}\' with PUT method", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 17
 testRunner.And("Create URL segment \'id\' with parameter \'wrong\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");

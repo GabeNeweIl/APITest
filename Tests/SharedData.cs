@@ -2,7 +2,7 @@
 
 namespace Tests
 {
-    public class SharedData
+    public static class SharedData
     {
         public static RestClient client = new RestClient(BaseURL.BaseUrl);
 

@@ -12,7 +12,7 @@ namespace Tests.Steps
     {
         Employee employee;
 
-        [Given(@"Deserialize the employee api content")]
+        [When(@"Deserialize the employee api content")]
         public void GivenDeserializeTheEmployeeApiContent()
         {
             var obj = JObject.Parse(SharedData.response.Content);
@@ -38,6 +38,5 @@ namespace Tests.Steps
 
             expectedEmployee.Should().BeEquivalentTo(employee);
         }
-        //
     }
 }

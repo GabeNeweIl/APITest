@@ -11,7 +11,7 @@ namespace Tests.Steps
     {
         Employee[] employees;
 
-        [When(@"Deserialize the employee api content")]
+        [When(@"Deserialize the employees api content")]
         public void WhenDeserializeTheEmployeeApiContent()
         {
             var obj = JObject.Parse(SharedData.response.Content);
@@ -19,11 +19,10 @@ namespace Tests.Steps
             employees = JsonConvert.DeserializeObject<Employee[]>(obj["data"].ToString());
         }
         
-        [Then(@"i should get list of (.*) employees")]
+        [Then(@"I should get list of (.*) employees")]
         public void ThenIShouldGetListOfEmployees(int expectedCount)
         {
             employees.Length.Should().Be(expectedCount);
         }
-        //
     }
 }
