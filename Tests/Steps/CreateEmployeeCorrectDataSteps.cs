@@ -34,6 +34,7 @@ namespace Tests.Steps
             };
 
             JsonSerializer serializer = new JsonSerializer();
+
             jsonBody = serializer.Serialize(obj);
         }
         
@@ -42,5 +43,6 @@ namespace Tests.Steps
         {
             SharedData.request.AddJsonBody(jsonBody);
         }
+        //
     }
 }
